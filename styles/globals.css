@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 60 9% 98%;
+  }
+}
+
+body {
+  overflow: hidden;
+  cursor: none;
+}
+
+/* Custom cursor styles */
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 0.1s ease-out;
+}
+
+.cursor-dot {
+  width: 4px;
+  height: 4px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Add custom serif font for the subtitle */
+@font-face {
+  font-family: 'CustomSerif';
+  src: url('/fonts/your-serif-font.woff2') format('woff2');
+}
+
